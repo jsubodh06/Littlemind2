@@ -1,0 +1,6 @@
+{
+  "name": "Little Sprout - Montessori Toys & Play Furniture",
+  "description": "Warm, handcrafted Montessori play toys, developmental boxes, and sustainable wooden play furniture for ages 0-15.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

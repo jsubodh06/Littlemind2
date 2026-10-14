@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Fraunces', serif;
+  --font-sans: 'Nunito', sans-serif;
+  
+  --color-cream: #FFF8EF;
+  --color-cream-light: #FFFDF9;
+  --color-cream-dark: #F5EADB;
+  --color-sage: #7BA88B;
+  --color-sage-light: #EBF4EE;
+  --color-sage-dark: #588469;
+  --color-terracotta: #E2725B;
+  --color-terracotta-light: #FDEEEB;
+  --color-terracotta-dark: #C45540;
+  --color-sunshine: #F6C453;
+  --color-sunshine-light: #FEF8E7;
+  --color-sunshine-dark: #D4A02A;
+  --color-bark: #3B2F2F;
+  --color-bark-light: #6E5A5A;
+  --color-bark-muted: #948282;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-bark);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-serif);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.rounded-blob {
+  border-radius: 60% 40% 70% 30% / 45% 55% 45% 55%;
+}
+
+.rounded-blob-2 {
+  border-radius: 40% 60% 40% 60% / 55% 45% 55% 45%;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
